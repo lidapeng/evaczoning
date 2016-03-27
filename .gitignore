@@ -1,4 +1,5 @@
 reversegeocoders/*.pyc
 postgis/*.pyc
+gir/*.pyc
 .project
 .pydevproject
