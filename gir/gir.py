@@ -1,9 +1,10 @@
 '''
 Created on Mar 25, 2016
 
-@author: Dapeng
+@author: Dapeng Li
 '''
-from reversegeocoders.agrclib import AGRCResult,AGRCReverseGeocoder 
+#from reversegeocoders.agrclib import AGRCResult,AGRCReverseGeocoder 
+# include all reverse geocoders
 from reversegeocoders.geonameslib import GeonamesReverseGeocoder
 from reversegeocoders.openstreetmaplib import OpenStreetResult,OpenStreetReverseGeocoder
 from reversegeocoders.googlelib import GoogleResult,GoogleReverseGeocoder
