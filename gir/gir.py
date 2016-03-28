@@ -10,6 +10,7 @@ from reversegeocoders.openstreetmaplib import OpenStreetResult,OpenStreetReverse
 from reversegeocoders.googlelib import GoogleResult,GoogleReverseGeocoder
 from reversegeocoders.mapquestlib import MapQuestResult,MapQuestReverseGeocoder
 from reversegeocoders.distance import VincentyDistance
+from reversegeocoders.arcgislib import ArcGISResult,ArcGISReverseGeocoder
 if __name__ == '__main__':
     #40.766453, -111.865761
     geonamesRGeocoder = GeonamesReverseGeocoder()
