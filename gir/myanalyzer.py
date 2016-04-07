@@ -4,8 +4,8 @@ Created on Mar 30, 2014
 @author: Dapeng Li
 '''
 import sys
-import distance
-import point
+from reversegeocoders.distance import VincentyDistance
+from reversegeocoders.point import Point
 import mycsvwriter
 
 if __name__ == '__main__':
@@ -33,13 +33,13 @@ if __name__ == '__main__':
             distanceRow = []
             for j in range(0,6):
                 n= i*6 + j 
-                pt = point.Point(float(dataset[n][1]),float(dataset[n][2]))
+                pt = Point(float(dataset[n][1]),float(dataset[n][2]))
                 print 'ID: ',i, len(dataset[n])
                 if dataset[n][4]=='' or dataset[n][5]=='':
-                    pt1 = point.Point(0.0,0.0)
+                    pt1 = Point(0.0,0.0)
                 else:
-                    pt1 = point.Point(float(dataset[n][4]),float(dataset[n][5]))
-                dist = distance.VincentyDistance()
+                    pt1 = Point(float(dataset[n][4]),float(dataset[n][5]))
+                dist = VincentyDistance()
                 distanceValue = dist.measure(pt, pt1)*1000
                 distanceRow.append(distanceValue)
             distanceData.append(distanceRow)

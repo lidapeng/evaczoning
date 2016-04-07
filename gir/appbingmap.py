@@ -4,7 +4,7 @@ Created on Apr 2, 2014
 Redo all the locations returned from Bing Map reverse geocoding service
 @author: Dapeng Li
 '''
-import binglib
+from reversegeocoders import binglib
 import mycsvwriter
 import time
 
